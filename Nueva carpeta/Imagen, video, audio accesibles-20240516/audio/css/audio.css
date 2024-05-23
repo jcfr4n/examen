@@ -1,0 +1,20 @@
+
+#letra {
+    /* visibility: hidden; */
+    display: none;
+}
+
+#cancion audio, #cancion a {
+    display: block;
+    margin-top: 2rem;
+}
+
+
+/*cuando chequeo el input, muestro la letra */
+#cancion input:checked ~ #letra {
+    display: block;
+    height: 15rem;
+    width: 35rem;
+    overflow-y: scroll;
+    border : 2px solid;
+}

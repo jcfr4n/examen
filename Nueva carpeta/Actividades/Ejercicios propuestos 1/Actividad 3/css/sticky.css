@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+aside {
+    width: 300px;
+    margin: 20px auto;
+    /* border: 1px solid #ccc; */
+    overflow: scroll;
+    height: 150px;
+}
+
+p {
+    padding: 0rem 1rem;
+    line-height: 2rem;
+    vertical-align: middle;
+    background-color: #f9d097;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    line-height: 1.5rem;
+}

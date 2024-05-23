@@ -1,0 +1,24 @@
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:flex;
+    width: 600px;
+    height: 430px;
+}
+
+section img {
+    width: 0;  /* ancho sea 0*/
+    flex-grow: 1;  /* tiene que ocupar lo máximo que pueda dentro de la caja flexible*/
+    object-fit: cover; /*cubra todo el espacio*/
+    opacity: 0.8; /*bajamos opacidad*/
+    transition: 0.5s ease; /*transicion*/
+}
+
+section img:hover {
+    cursor: crosshair; /*lo cambiamos por una cruz*/
+    width: 300px;
+    opacity: 1; /*devolvemos opacidad*/
+    filter: contrast(120%); /*subimos el contraste*/
+}

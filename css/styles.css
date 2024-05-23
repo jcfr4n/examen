@@ -159,6 +159,7 @@ section {
     margin-top: var(--margin-standard);
     margin-bottom: var(--margin-standard);
     width: var(--section-width);
+    height: auto;
     float: left;
 }
 
@@ -171,12 +172,14 @@ aside {
 
 
 article {
+    position: relative;
     margin-top: var(--margin-small);
     margin-bottom: var(--margin-small);
     height: auto;
 }  
 
 section h2 {
+    position: relative;
     text-align: center;
 }
 

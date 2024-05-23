@@ -7,9 +7,10 @@
     --header-height: 12.5rem;
     --header-width: 75rem;
     --nav-height: 3rem;
-    --main-width: 62.5rem;
+    --section-width: 62.5rem;
     --aside-height: 27rem;
     --aside-width: 12.5rem;
+    --main-width: calc(var(--section-width) + var(--aside-width));
 
     /* fuentes */
 
@@ -60,6 +61,7 @@ nav {
     top: var(--header-height);
     width: 100%;
     height: var(--nav-height);
+    z-index: 100;
 }
 
 .navbar {
@@ -148,14 +150,16 @@ main {
     margin-top: calc(var(--header-height) + var(--nav-height) + var(--margin-standard));
     width: var(--main-width);
     position: relative;
-    float: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section {
+    position: relative;
     margin-top: var(--margin-standard);
     margin-bottom: var(--margin-standard);
-    height: auto;
-    width: var(--main-width);
+    width: var(--section-width);
+    float: left;
 }
 
 aside {
@@ -182,7 +186,16 @@ article p {
     margin-bottom: var(--margin-small);
 }
 
+img {
+    position: absolute;
+    top: var(--margin-standard);
+    left: 0;
+}
 
+#cartel {
+    width: 62.5rem;
+    height: 75rem;
+}
 
 .galeria {
     position: relative;

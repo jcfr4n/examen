@@ -1,0 +1,210 @@
+:root {
+    /* colores */
+    --color-fondo: #d7ecf5;
+    --color-titulo: #9a763b;
+
+    /* tamaños */
+    --header-height: 12.5rem;
+    --header-width: 75rem;
+    --nav-height: 3rem;
+    --main-width: 62.5rem;
+    --aside-height: 27rem;
+    --aside-width: 12.5rem;
+
+    /* fuentes */
+
+    /* otros */
+    --margin-standard: 3rem;
+    --margin-small: 1rem;
+    --rotation-angle: -45deg;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-fondo);
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    background-image: url(/img/fondo_header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: var(--header-height);
+    width: var(--header-width);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+header h1 {
+    display: inline;
+    color: var(--color-titulo);
+    font-size: 3rem;
+    text-align: right;
+    float: right;
+    margin-right: var(--margin-small);
+    margin-top: var(--margin-standard);
+    transform: rotate(var(--rotation-angle));
+}
+
+nav {
+    position: fixed;
+    top: var(--header-height);
+    width: 100%;
+    height: var(--nav-height);
+}
+
+.navbar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ############################################################################ */
+/*                                      Menú                                    */
+/* ############################################################################ */
+
+ul {
+    position: absolute;
+	list-style-type:none;  	
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display:block;	
+	min-width:140px;	
+	text-align: center;
+	line-height:  var(--nav-height);
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #0c1650;
+	text-decoration: none;
+    transition:all 3s ease-in-out;   
+}
+
+li:hover a {
+	background: #6d9af3;
+}
+ 
+li:hover ul a {
+	background: #f3f3f3; 
+	color: #060c2e;
+}
+
+li:hover ul a:hover {
+	background: #6d9af3;
+	color: #fff;
+	transition:all 0.5s ease;
+}
+
+li ul {
+	display: none; 
+}
+   
+li ul li {
+	display: block;
+	float: none;       
+}
+
+li ul li a {
+	white-space: nowrap;
+	padding: 0 20px;
+}
+  
+ul li a:hover + .submenu, .submenu:hover {    
+	display: block;
+} 
+ 
+ul li ul li {                              
+	position: relative;	
+	
+}
+
+.submenu .submenu li a {        
+	background: rgb(197, 196, 196);
+	color: #0a0435;
+}
+
+.submenu .submenu {              
+	top: 0px; 
+    left: 100%; 
+}
+
+
+/* ########################################################################### */
+
+main {
+    margin-top: calc(var(--header-height) + var(--nav-height) + var(--margin-standard));
+    width: var(--main-width);
+    position: relative;
+    float: left;
+}
+
+section {
+    margin-top: var(--margin-standard);
+    margin-bottom: var(--margin-standard);
+    height: auto;
+    width: var(--main-width);
+}
+
+aside {
+    position: relative;
+    width: var(--ancho-aside);
+    height: var(--alto-aside);
+    float: right;
+}
+
+
+article {
+    margin-top: var(--margin-small);
+    margin-bottom: var(--margin-small);
+    height: auto;
+}  
+
+section h2 {
+    text-align: center;
+}
+
+article p {
+    text-align: justify;
+    line-height: 200%;
+    margin-bottom: var(--margin-small);
+}
+
+
+
+.galeria {
+    position: relative;
+    /* top: 50%; */
+    left: 50%;
+    transform: translateX(-50%);
+    display:flex;
+    width: 600px;
+    height: 430px;
+}
+
+.galeria img {
+    width: 0;  /* ancho sea 0*/
+    flex-grow: 1;  /* tiene que ocupar lo máximo que pueda dentro de la caja flexible*/
+    object-fit: cover; /*cubra todo el espacio*/
+    opacity: 0.8; /*bajamos opacidad*/
+    transition: 0.5s ease; /*transicion*/
+}
+
+.galeria img:hover {
+    cursor: crosshair; /*lo cambiamos por una cruz*/
+    width: 300px;
+    opacity: 1; /*devolvemos opacidad*/
+    filter: contrast(120%); /*subimos el contraste*/
+}

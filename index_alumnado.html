@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<title></title>
+		<title>Examen DOR</title>
 		<meta charset="UTF-8">
 	    <link rel="stylesheet" type="text/css" href="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.css"/>
         <link rel="stylesheet" href="./css/styles.css"/>
@@ -12,73 +12,73 @@
     </head>
 
 	<body>
+        <header>
+            <h1>DOR</h1>
+        </header>
+        <nav>
+            <ul class="navbar menu">
+                <li><a href="/index_alumnado.html" >Inicio</a></li>
+                <li><a href="#" >Historia</a>
+                    <ul class="submenu">
+                        <li><a href="#poster" >Carnaval de Tenerife</a></li>
+                        <li><a href="#people" >Personajes</a></li>
+                        <li><a href="#">Canción</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" >Cabalgatas</a>
+                    <ul class="submenu"> 
+                        <li><a href="#" >Cabalgata anunciadora</a></li>
+                        <li><a href="#" >Entierro de la Sardina</a></li>
+                        <li><a href="#" >Coso</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" >Concursos y Certámenes</a>
+                    <ul class="submenu">
+                        <li><a href="#" >Certamen de Rondallas</a></li>
+                        <li><a href="#" >Concurso de Comparsas</a>
+                            <ul class="submenu">
+                                <li><a href="#" >Infantil</a></li>
+                                <li><a href="#" >Adulta</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" >Concurso de Murgas</a>
+                            <ul class="submenu">
+                                <li><a href="#" >Infantil</a></li>
+                                <li><a href="#" >Adulta</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" >Elección de Reinas</a>
+                            <ul class="submenu">
+                                <li><a href="#" >Infantil</a></li>
+                                <li><a href="#" >Adulta</a></li>
+                                <li><a href="#" >Tercera edad</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" >Agrupaciones Musicales</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" >Contacto</a></li>
+            </ul>
+        </nav>
         <main>
-            <header>
-                <h1>DOR</h1>
-            </header>
-            <nav>
-                <ul>
-                    <li><a href="" >Inicio</a></li>
-                    <li><a href="#" >Historia</a>
-                        <ul>
-                            <li><a href="#" >Carnaval de Tenerife</a></li>
-                            <li><a href="#" >Personajes</a></li>
-                            <li><a href="#">Canción</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" >Cabalgatas</a>
-                        <ul> 
-                            <li><a href="#" >Cabalgata anunciadora</a></li>
-                            <li><a href="#" >Entierro de la Sardina</a></li>
-                            <li><a href="#" >Coso</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" >Concursos y Certámenes</a>
-                        <ul>
-                            <li><a href="#" >Certamen de Rondallas</a></li>
-                            <li><a href="#" >Concurso de Comparsas</a>
-                                <ul>
-                                    <li><a href="#" >Infantil</a></li>
-                                    <li><a href="#" >Adulta</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" >Concurso de Murgas</a>
-                                <ul>
-                                    <li><a href="#" >Infantil</a></li>
-                                    <li><a href="#" >Adulta</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" >Elección de Reinas</a>
-                                <ul>
-                                    <li><a href="#" >Infantil</a></li>
-                                    <li><a href="#" >Adulta</a></li>
-                                    <li><a href="#" >Tercera edad</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" >Agrupaciones Musicales</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" >Contacto</a></li>
-                </ul>
-            </nav>
-            <section>
+            <section id="poster">
                 <h2>Cartel del Carnaval de Santa Cruz de Tenerife 2023</h2>
                 <article>
-                    <img id="cartel" src=""> 
+                    <img id="cartel" src="/img/cartel.jpeg" alt="Cartel del carnaval de Tenerife"> 
                 </article>
             </section>
-            <section>
+            <section id="people">
                 <h2>Personajes del Carnaval</h2>
-                <article>
-                    <img src="">
-                    <img src="">
-                    <img src="">
-                    <img src="">
-                    <img src="">
-                    <img src="">
+                <article class="galeria">
+                    <img src="/img/cantinflas.jpg">
+                    <img src="/img/chiquito.jpg">
+                    <img src="/img/charlot.jpg">
+                    <img src="/img/fidel_castro.jpg">
+                    <img src="/img/croqueta_ciruelo.jpg">
+                    <img src="/img/lecherita.jpg">
                 </article>
             </section>
-            <section>
+            <section id="history">
                 <h2>Historia del Carnaval de Santa Cruz de Tenerife</h2>
                 <article>
                     <p>
@@ -106,7 +106,7 @@
                     </p>
                 </article>
             </section>
-            <section>
+            <section id="" id="song">
                 <h2>La vida es un Carnaval ~ Celia Cruz</h2>
                 <article>
                     <!-- insertar audio de celiaCruz-->
@@ -177,52 +177,53 @@
                     </pre>
                 </article>
             </section>
-            <section>
+            <section id="contact">
                 <h2> Formulario de contacto:</h2>
-                <form action="#" method="post"></form>
                 <article>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre">
-                    <label for="apellidos">Apellidos:</label>
-                    <input type="text" id="apellidos" size="50">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email">
-                    <label for="fech_nac">Fecha de Nacimiento:</label>
-                    <input type="date" id="fech_nac">                
-                    <label for="t_calle">Tipo:</label>
-                    <select name="t_calle" id="t_calle">
-                        <option value="null"></option>
-                        <option value="c">Calle</option>
-                        <option value="a">Avenida</option>
-                        <option value="t">Travesía</option>
-                        <option value="p">Paseo</option>
-                        <option value="r">Rambla</option>
-                        <option value="pl">Plaza</option>
-                    </select>
-                    <label for="n_calle">Nombre:</label>
-                    <input type="text" id="n_calle" value="0">
-                    <label for="num_calle">Nº:</label>
-                    <input type="number" id="num_calle" min="1" max="60" step="1" value="0"/>
-                    <label for="isla">Provincia/Isla:</label>
-                    <select name="isla">
-                        <option value="null"></option>
-                        <optgroup label="S/C de Tenerife">
-                            <option value="tf">Tenerife</option>
-                            <option value="lp">La Palma</option>
-                            <option value="lg">La Gomera</option>
-                            <option value="h">El Hierro</option>
-                        </optgroup>
-                        <optgroup label="Las Palmas de Gran Canaria">
-                            <option value="gc">Gran Canaria</option>
-                            <option value="lz">Lanzarote</option>
-                            <option value="f">Fuerteventura</option>
-                        </optgroup>
-                    </select>
-                    <label for="cp">Código Postal:</label>
-                    <input type="text" id="cp">                      
-                    <label for="foto">Inserta una foto:</label>
-                    <input type="file" value="sin_archivo" id="foto"></input>                               
-                    <button id="bt_enviar">Enviar</button>  
+                        <form action="#" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" size="50">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email">
+                        <label for="fech_nac">Fecha de Nacimiento:</label>
+                        <input type="date" id="fech_nac">                
+                        <label for="t_calle">Tipo:</label>
+                        <select name="t_calle" id="t_calle">
+                            <option value="null"></option>
+                            <option value="c">Calle</option>
+                            <option value="a">Avenida</option>
+                            <option value="t">Travesía</option>
+                            <option value="p">Paseo</option>
+                            <option value="r">Rambla</option>
+                            <option value="pl">Plaza</option>
+                        </select>
+                        <label for="n_calle">Nombre:</label>
+                        <input type="text" id="n_calle" value="0">
+                        <label for="num_calle">Nº:</label>
+                        <input type="number" id="num_calle" min="1" max="60" step="1" value="0"/>
+                        <label for="isla">Provincia/Isla:</label>
+                        <select name="isla">
+                            <option value="null"></option>
+                            <optgroup label="S/C de Tenerife">
+                                <option value="tf">Tenerife</option>
+                                <option value="lp">La Palma</option>
+                                <option value="lg">La Gomera</option>
+                                <option value="h">El Hierro</option>
+                            </optgroup>
+                            <optgroup label="Las Palmas de Gran Canaria">
+                                <option value="gc">Gran Canaria</option>
+                                <option value="lz">Lanzarote</option>
+                                <option value="f">Fuerteventura</option>
+                            </optgroup>
+                        </select>
+                        <label for="cp">Código Postal:</label>
+                        <input type="text" id="cp">                      
+                        <label for="foto">Inserta una foto:</label>
+                        <input type="file" value="sin_archivo" id="foto"></input>                               
+                        <button id="bt_enviar">Enviar</button>  
+                    </form>
                 </article>
             </section>
         </main>
